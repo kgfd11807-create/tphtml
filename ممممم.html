@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Developpement Web</title>
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:Segoe UI, Arial;
+background:linear-gradient(120deg,#0f2027,#203a43,#2c5364);
+height:100vh;
+}
+ 
+
+.container{
+display:flex;
+height:100vh;
+}
+
+ 
+
+.sidebar{
+width:280px;
+background:linear-gradient(180deg,#1e3c72,#2a5298);
+padding:30px 20px;
+color:white;
+box-shadow:5px 0 20px rgba(0,0,0,0.4);
+}
+ 
+
+.sidebar h2{
+margin-bottom:25px;
+font-size:24px;
+display:flex;
+align-items:center;
+gap:10px;
+}
+
+ 
+
+.sidebar p{
+margin-top:20px;
+margin-bottom:10px;
+font-size:12px;
+letter-spacing:1px;
+color:rgba(255,255,255,0.6);
+text-transform:uppercase;
+}
+
+ 
+
+.sidebar a{
+display:flex;
+align-items:center;
+gap:10px;
+text-decoration:none;
+color:white;
+padding:12px;
+margin:8px 0;
+border-radius:8px;
+background:rgba(255,255,255,0.1);
+transition:all 0.3s;
+}
+
+ 
+
+.sidebar a:hover{
+background:#4a9eff;
+transform:translateX(6px);
+box-shadow:0 5px 15px rgba(0,0,0,0.3);
+}
+ 
+
+.content{
+flex:1;
+padding:20px;
+}
+ 
+
+iframe{
+width:100%;
+height:100%;
+border:none;
+border-radius:12px;
+background:white;
+box-shadow:0 10px 30px rgba(0,0,0,0.4);
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="sidebar">
+
+<h2><i class="fas fa-code"></i> Web Dev</h2>
+
+<p>Info</p>
+
+<a href="program/presentation.html" target="page">
+<i class="fas fa-users"></i>
+Programme et équipe
+</a>
+
+<a href="program/planning.html" target="page">
+<i class="fas fa-calendar"></i>
+Planning de cours
+</a>
+
+<p>Cours</p>
+
+<a href="cours/liste_cours.html" target="page">
+<i class="fas fa-book"></i>
+Liste des cours
+</a>
+
+<a href="cours/liste_sources.html" target="page">
+<i class="fas fa-link"></i>
+Liste des sources
+</a>
+
+<a href="sondage.html" target="page">
+<i class="fas fa-chart-bar"></i>
+Sondage
+</a>
+
+<a href="contact.html" target="page">
+<i class="fas fa-envelope"></i>
+Contact
+</a>
+
+</div>
+
+<div class="content">
+
+<iframe name="page"></iframe>
+
+</div>
+
+</div>
+
+</body>
+</html>
